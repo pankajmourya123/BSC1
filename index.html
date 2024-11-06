@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tribute Website - Steve Jobs</title>
   
-  <!-- Bootstrap CSS -->
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -13,23 +13,19 @@
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       margin: 0;
-      padding: 10px;
+      
     }
-    .container {
+    .cont {
       background-color: rgb(221, 214, 214);
-      width: 90vw;
-      max-width: 1000px;
+      width: 100%;
       height: auto;
       border: 1px solid #ddd;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      padding: 20px;
+    
     }
     .image-section {
       flex: 1;
@@ -37,15 +33,17 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 15px;
+      padding: 10px;
+      width: 100vw;
     }
     .image-section img {
-      width: 100%;
-      max-height: 50vh;
+      width:45vw;
+      height: 90vh;
       object-fit: cover;
       border: 2px solid rgb(138, 135, 135);
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
     }
     .image-section p {
       margin-top: 10px;
@@ -54,7 +52,7 @@
     }
     .text-section {
       flex: 1;
-      padding: 20px;
+      padding: 10px;
       border-top: 1px solid #ddd;
       display: flex;
       flex-direction: column;
@@ -67,18 +65,21 @@
     .text-section p {
       line-height: 1.6;
     }
-    /* Media queries for responsiveness */
+   
     @media (min-width: 768px) {
-      .container {
+      .cont {
         flex-direction: row;
-        width: 80vw;
-        height: 80vh;
+        width: 100vw;
+        height: 100vh;
+       
       }
       .image-section {
-        width: 60%;
+        width: 40vw;
+        
       }
       .text-section {
-        width: 40%;
+        width: 60%;
+        height: 100%;
         border: 2px solid rgb(138, 135, 135);
       }
       .image-section p {
@@ -96,7 +97,7 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="cont">
     <div class="image-section">
       <img src="profoto-albert-watson-steve-jobs-pinned-image-original.jpg" alt="Steve Jobs">
       <p>Steve Paul Jobs</p>
@@ -114,7 +115,6 @@
     </div>
   </div>
 
-  <!-- Bootstrap JS (optional) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 </html>
